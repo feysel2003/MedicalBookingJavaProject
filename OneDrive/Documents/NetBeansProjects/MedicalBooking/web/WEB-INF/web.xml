@@ -1,0 +1,226 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <welcome-file-list>
+    <welcome-file>welcome.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+
+    <!-- Register Servlet -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>controller.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controller.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Optional: default welcome page -->
+    <welcome-file-list>
+        <welcome-file>register.jsp</welcome-file>
+    </welcome-file-list>
+
+        <!--AppointmentServlet-->
+<servlet>
+    <servlet-name>AppointmentServlet</servlet-name>
+    <servlet-class>controller.AppointmentServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AppointmentServlet</servlet-name>
+    <url-pattern>/AppointmentServlet</url-pattern>
+</servlet-mapping>
+
+<!--CancelAppointmentServlet-->
+<servlet>
+    <servlet-name>CancelAppointmentServlet</servlet-name>
+    <servlet-class>controller.CancelAppointmentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CancelAppointmentServlet</servlet-name>
+    <url-pattern>/CancelAppointmentServlet</url-pattern>
+</servlet-mapping>
+
+<!--RescheduleAppointmentServlet-->
+<servlet>
+    <servlet-name>RescheduleAppointmentServlet</servlet-name>
+    <servlet-class>controller.RescheduleAppointmentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>RescheduleAppointmentServlet</servlet-name>
+    <url-pattern>/RescheduleAppointmentServlet</url-pattern>
+</servlet-mapping>
+
+<!--DoctorDashboardServlet-->
+<servlet>
+    <servlet-name>DoctorDashboardServlet</servlet-name>
+    <servlet-class>controller.DoctorDashboardServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DoctorDashboardServlet</servlet-name>
+    <url-pattern>/DoctorDashboardServlet</url-pattern>
+</servlet-mapping>
+
+
+<!--DoctorLoginServlet-->
+<servlet>
+    <servlet-name>DoctorLoginServlet</servlet-name>
+    <servlet-class>controller.DoctorLoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>DoctorLoginServlet</servlet-name>
+    <url-pattern>/DoctorLoginServlet</url-pattern>
+</servlet-mapping>
+
+
+<!--UpdateAppointmentStatusServlet-->
+
+<servlet>
+    <servlet-name>UpdateAppointmentStatusServlet</servlet-name>
+    <servlet-class>controller.UpdateAppointmentStatusServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UpdateAppointmentStatusServlet</servlet-name>
+    <url-pattern>/UpdateAppointmentStatusServlet</url-pattern>
+</servlet-mapping>
+
+
+
+<!--ProfileServlet-->
+<servlet>
+    <servlet-name>ProfileServlet</servlet-name>
+    <servlet-class>controller.ProfileServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/ProfileServlet</url-pattern>
+</servlet-mapping>
+
+
+
+<!--AdminLoginServlet-->
+<servlet>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>controller.AdminLoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/AdminLoginServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <servlet-class>controller.AdminLogoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <url-pattern>/AdminLogoutServlet</url-pattern>
+</servlet-mapping>
+
+
+
+
+<!--ToggleDoctorStatusServlet-->
+<servlet>
+    <servlet-name>ToggleDoctorStatusServlet</servlet-name>
+    <servlet-class>controller.ToggleDoctorStatusServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ToggleDoctorStatusServlet</servlet-name>
+    <url-pattern>/ToggleDoctorStatusServlet</url-pattern>
+</servlet-mapping>
+
+<!--ManageDoctorsServlet-->
+<servlet>
+    <servlet-name>ManageDoctorsServlet</servlet-name>
+    <servlet-class>controller.ManageDoctorsServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ManageDoctorsServlet</servlet-name>
+    <url-pattern>/ManageDoctorsServlet</url-pattern>
+</servlet-mapping>
+
+
+
+    <!-- Edit Doctor -->
+    <servlet>
+        <servlet-name>EditDoctorServlet</servlet-name>
+        <servlet-class>controller.EditDoctorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditDoctorServlet</servlet-name>
+        <url-pattern>/EditDoctorServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+    <servlet-name>AddDoctorServlet</servlet-name>
+    <servlet-class>controller.AddDoctorServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AddDoctorServlet</servlet-name>
+    <url-pattern>/AddDoctorServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>LoadAppointmentServlet</servlet-name>
+    <servlet-class>controller.LoadAppointmentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>LoadAppointmentServlet</servlet-name>
+    <url-pattern>/bookAppointment</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+    <servlet-name>UpdatePasswordServlet</servlet-name>
+    <servlet-class>controller.UpdatePasswordServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UpdatePasswordServlet</servlet-name>
+    <url-pattern>/UpdatePasswordServlet</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>controller.LogoutServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+</web-app>
